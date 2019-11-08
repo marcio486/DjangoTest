@@ -1,0 +1,11 @@
+/generics/__pycache__/*.pyc
+
+/logs/08-21-2019/XPertLayer/log.txt
+/logs/08-19-2019/BiModules/log.txt
+/logs/08-19-2019/DataBase/*.txt
+*.txt
+*.pyc
+/*.spec
+/dist
+/build
+
