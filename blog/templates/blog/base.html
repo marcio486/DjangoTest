@@ -9,7 +9,8 @@
 	</head>
    <body>
 		<div class="page-header">
-			<h1><a href="/">Django </a></h1>
+			<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+			<h1><a href="/">Django </a></h1>	
 		</div>
 		<div class="content container">
 			<div class="row">
@@ -20,6 +21,7 @@
 							<div class="date">
 								{{ post.published_date }}
 							</div>
+							{{ post.author }}
 							<h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 							<p>{{ post.text|linebreaksbr }}</p>
 						</div>
