@@ -1,18 +1,25 @@
 <html>
 
 <head>
-    <title> zika</title>
+    <title> tranqueira</title>
 </head>
 
 <body>
     <div id="app">
-        <input type = "text" name = "nome"/>
-        <button class ="botao" id = "brtn">Press me </button>
+        <button class ="botao" id = "brtn">Mais </button>
+        <button class ="botao" id = "brtn2">Menos </button>
     </div>
     <script>
+        var x = 25
         var btnel = document.getElementById('brtn')
+        var btnel2 = document.getElementById('brtn2')
         btnel.onclick = function() {
-            alert('parabens')
+            x++;
+            alert(x+' graus malandro')
+        }
+        btnel2.onclick = function() {
+            x--;
+            alert(x+' graus malandro')
         }
     </script>
 </body>
