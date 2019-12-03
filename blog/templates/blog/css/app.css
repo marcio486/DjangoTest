@@ -1,0 +1,12 @@
+.quadrado {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    float: left;
+  }
+.quadrado2 {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    margin-left: 50px;
+}
