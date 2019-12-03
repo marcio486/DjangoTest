@@ -1,26 +1,48 @@
 <html>
 
 <head>
-    <title> tranqueira</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
-    <div id="app">
-        <button class ="botao" id = "brtn">Mais </button>
-        <button class ="botao" id = "brtn2">Menos </button>
+    <div>
+        <button id='btn'>Aparecer quadrado</button>
+    </div>
+    <div id ='teste2'>
+
     </div>
     <script>
-        var x = 25
-        var btnel = document.getElementById('brtn')
-        var btnel2 = document.getElementById('brtn2')
-        btnel.onclick = function() {
-            x++;
-            alert(x+' graus malandro')
+        var x = document.getElementById('btn')
+        var l = 0;
+        btn.onclick = function () {
+            if (l == 0){
+                var y = document.createElement('div')
+                y.className = 'quadrado';
+                y.onmouseover =function(){
+                    y.style.backgroundColor =  getRandomColor()
+                }
+                l = 1;
+                document.body.appendChild(y)
+            }else{
+                var y = document.createElement('div')
+                y.className = 'quadrado2';
+                y.onmouseover =function(){
+                    y.style.backgroundColor =  getRandomColor()
+                }
+                l = 0;
+                document.body.append(y)
+            }   
         }
-        btnel2.onclick = function() {
-            x--;
-            alert(x+' graus malandro')
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
         }
+        var newColor = getRandomColor(); // #E943F0
+
     </script>
 </body>
 
